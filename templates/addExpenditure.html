@@ -1,0 +1,71 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Germany</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="static/stylesheet/style.css">
+    <!--<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheet/style.css') }}">-->
+
+</head>
+
+<body>
+	<!-- As a heading -->
+	<h2>Budget Planner</h2>
+
+    <section>
+			 <form action="/addemp" autocomplete="on" method = "POST" enctype="multipart/form-data">
+				 <table>
+					 <tr>
+						 <td>
+							<h5 >Main Category</h5>
+								<select name="main_category" id= "main_category" data-target="secondList" class="firstList selectFilter" required="required">
+													<option value="-1">Select</option>
+													<option data-ref="Bayern">Bayern</option>
+													<option data-ref="Sachsen">Sachsen</option>
+													<option data-ref="Sachsen Anhalt">Sachsen Anhalt</option>
+													<option data-ref="Niedersachsen">Niedersachsen</option>
+													<option data-ref="Nordrhein Westfalen">Nordrhein Westfalen</option>
+													<option data-ref="Berlin">Berlin</option>
+													<option data-ref="Thüringen">Thüringen</option>
+													<option data-ref="Hessen">Hessen</option>
+													<option data-ref="Rheinland Pfalz">Rheinland Pfalz</option>
+													<option data-ref="Hamburg">Hamburg</option>
+													<option data-ref="Schleswig Holstein">Schleswig Holstein</option>
+													<option data-ref="Brandenburg">Brandenburg</option>
+													<option data-ref="Mecklenburg Vorpommern">Mecklenburg Vorpommern</option>
+													<option data-ref="Baden Württemberg">Baden Württemberg</option>
+													<option data-ref="Saarland">Saarland</option>
+													<option data-ref="Bremen">Bremen</option>
+								</select>
+						 </td>
+						 <td>
+						<h5>Sub Category</h5>
+							<select name="sub_category" id="sub_category" class="secondList selectFilter" required="required">
+												<option value="-1">Select</option>
+												<option data-ref="Mannheim" data-belong="Baden Württemberg" >Mannheim</option>
+												<option data-ref="Lörrach Kreis" data-belong="Baden Württemberg" >Lörrach Kreis</option>
+												<option data-ref="Böblingen Kreis" data-belong="Baden Württemberg" >Böblingen Kreis</option>
+												<option data-ref="Stuttgart" data-belong="Baden Württemberg" >Stuttgart</option>
+												<option data-ref="Heilbronn" data-belong="Baden Württemberg" >Heilbronn</option>
+												<option data-ref="Rhein Neckar Kreis" data-belong="Baden Württemberg" >Rhein Neckar Kreis</option>
+												<option data-ref="Esslingen Kreis" data-belong="Baden Württemberg" >Esslingen Kreis</option>
+												<option data-ref="Ludwigsburg Kreis" data-belong="Baden Württemberg" >Ludwigsburg Kreis</option>
+												<option data-ref="Heidelberg" data-belong="Baden Württemberg" >Heidelberg</option>
+												<option data-ref="Karlsruhe Kreis" data-belong="Baden Württemberg" >Karlsruhe Kreis</option>
+												<option data-ref="Heilbronn Kreis" data-belong="Baden Württemberg" >Heilbronn Kreis</option>
+							</select>
+							 </td>
+						 <td>
+						<h5>Amount</h5>
+						<input type="number" name="amount" id="amount" min= "0" max="10000" required="required">
+						 </td>
+				 	</tr>
+				 </table>
+					<br>
+            		<!-- Submit -->
+                    <button type="submit" style="background: grey; height: 35px; width: 150px; color: white; size: 5; font:oblique;">Add Expenditure</button>
+			</form>
+    </section>
+</body>
+</html>
