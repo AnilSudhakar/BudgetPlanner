@@ -1,0 +1,300 @@
+[
+  {
+    "ID": "001",
+   "Name": "Bar, Cafe",
+    "Type": "Food & Drinks" },
+  {
+    "ID": "002",
+    "Name": "Groceries",
+    "Type": "Food & Drinks" },
+  {
+    "ID": "003",
+    "Name": "Restaurant, fast-food",
+    "Type": "Food & Drinks" },
+
+  {
+    "ID": "004",
+    "Name": "Business trips",
+    "Type": "Transportation" },
+  {
+    "ID": "005",
+    "Name": "Long  Distance",
+    "Type": "Transportation"  },
+  {
+    "ID": "006",
+    "Name": "Public Transport",
+    "Type": "Transportation"  },
+  {
+    "ID": "007",
+    "Name": "Taxi",
+    "Type": "Transportation"  },
+
+  {
+    "ID": "008",
+    "Name": "Clothes & shoes",
+    "Type": "Shopping"  },
+  {
+    "ID": "009",
+    "Name": "Clothes & shoes",
+    "Type": "Shopping"  },
+  {
+    "ID": "010",
+    "Name": "Drug-store, chemist",
+    "Type": "Shopping"  },
+  {
+    "ID": "011",
+    "Name": "Electronics, accessories",
+    "Type": "Shopping"  },
+  {
+    "ID": "012",
+    "Name": "Free time",
+    "Type": "Shopping"  },
+  {
+    "ID": "013",
+    "Name": "Gifts, joy",
+    "Type": "Shopping"  },
+  {
+    "ID": "014",
+    "Name": "Health and beauty",
+    "Type": "Shopping"  },
+  {
+    "ID": "015",
+    "Name": "Home, garden",
+    "Type": "Shopping"  },
+  {
+    "ID": "016",
+    "Name": "Jewels, accessories",
+    "Type": "Shopping"  },
+  {
+    "ID": "017",
+    "Name": "Kids",
+    "Type": "Shopping"  },
+  {
+    "ID": "018",
+    "Name": "Pets, animals",
+    "Type": "Shopping"  },
+  {
+    "ID": "019",
+    "Name": "Stationary, tools",
+    "Type": "Shopping"  },
+
+ {
+    "ID": "020",
+    "Name": "Energy, utilities",
+    "Type": "Housing"  },
+     {
+    "ID": "021",
+    "Name": "Maintenance, repairs",
+    "Type": "Housing"  },
+ {
+    "ID": "022",
+    "Name": "Mortgage",
+    "Type": "Housing"  },
+ {
+    "ID": "023",
+    "Name": "Property insurance",
+    "Type": "Housing"  },
+ {
+    "ID": "024",
+    "Name": "Rent",
+    "Type": "Housing"  },
+ {
+    "ID": "025",
+    "Name": "Services",
+    "Type": "Housing"  },
+
+ {
+    "ID": "026",
+    "Name": "Fuel",
+    "Type": "Vehicle"  },
+ {
+    "ID": "027",
+    "Name": "Leasing",
+    "Type": "Vehicle"  },
+ {
+    "ID": "028",
+    "Name": "Parking",
+    "Type": "Vehicle"  },
+ {
+    "ID": "029",
+    "Name": "Rentals",
+    "Type": "Vehicle"  },
+ {
+    "ID": "030",
+    "Name": "Vehicle insurance",
+    "Type": "Vehicle"  },
+ {
+    "ID": "031",
+    "Name": "Vehicle maintenance",
+    "Type": "Vehicle"  },
+
+ {
+    "ID": "032",
+    "Name": "Active sport, fitness",
+    "Type": "Life & Entertainment"  },
+ {
+    "ID": "033",
+    "Name": "Alcohol, tobacco",
+    "Type": "Life & Entertainment"  },
+ {
+    "ID": "034",
+    "Name": "Books, audio, subscription",
+    "Type": "Life & Entertainment"  },
+ {
+    "ID": "035",
+    "Name": "Charity, gifts",
+    "Type": "Life & Entertainment"  },
+ {
+    "ID": "036",
+    "Name": "Culture, sport events",
+    "Type": "Life & Entertainment"  },
+ {
+    "ID": "037",
+    "Name": "Education, development",
+    "Type": "Life & Entertainment"  },
+ {
+    "ID": "038",
+    "Name": "Health care, doctor",
+    "Type": "Life & Entertainment"  },
+ {
+    "ID": "039",
+    "Name": "Hobbies",
+    "Type": "Life & Entertainment"  },
+ {
+    "ID": "040",
+    "Name": "Holiday, trips, hotels",
+    "Type": "Life & Entertainment"  },
+ {
+    "ID": "041",
+    "Name": "Life events",
+    "Type": "Life & Entertainment"  },
+ {
+    "ID": "042",
+    "Name": "Lottery, gambling",
+    "Type": "Life & Entertainment"  },
+ {
+    "ID": "043",
+    "Name": "TV, Streaming",
+    "Type": "Life & Entertainment"  },
+ {
+    "ID": "044",
+    "Name": "Wellness,beauty",
+    "Type": "Life & Entertainment"  },
+
+ {
+    "ID": "045",
+    "Name": "Internet",
+    "Type": "Communication, PC"  },
+ {
+    "ID": "046",
+    "Name": "Phone, cell phone",
+    "Type": "Communication, PC"  },
+ {
+    "ID": "047",
+    "Name": "Postal services",
+    "Type": "Communication, PC"  },
+ {
+    "ID": "048",
+    "Name": "Software, apps, games",
+    "Type": "Communication, PC"  },
+
+ {
+    "ID": "049",
+    "Name": "Advisory",
+    "Type": "Financial expenses"  },
+ {
+    "ID": "050",
+    "Name": "Charges, Fees",
+    "Type": "Financial expenses"  },
+ {
+    "ID": "051",
+    "Name": "Child Support",
+    "Type": "Financial expenses"  },
+ {
+    "ID": "052",
+    "Name": "Fines",
+    "Type": "Financial expenses"  },
+ {
+    "ID": "053",
+    "Name": "Insurances",
+    "Type": "Financial expenses"  },
+ {
+    "ID": "054",
+    "Name": "Loan, interests",
+    "Type": "Financial expenses"  },
+ {
+    "ID": "055",
+    "Name": "Taxes",
+    "Type": "Financial expenses"  },
+
+ {
+    "ID": "056",
+    "Name": "Collections",
+    "Type": "Investments"  },
+ {
+    "ID": "057",
+    "Name": "Financial investments",
+    "Type": "Investments"  },
+ {
+    "ID": "058",
+    "Name": "Realty",
+    "Type": "Investments"  },
+ {
+    "ID": "059",
+    "Name": "Savings",
+    "Type": "Investments"  },
+ {
+    "ID": "060",
+    "Name": "Vehicles,chattels",
+    "Type": "Investments"  },
+
+ {
+    "ID": "061",
+    "Name": "Checks, coupons",
+    "Type": "Income"  },
+ {
+    "ID": "062",
+    "Name": "Child Support",
+    "Type": "Income"  },
+ {
+    "ID": "063",
+    "Name": "Dues & grants",
+    "Type": "Income"  },
+ {
+    "ID": "064",
+    "Name": "Gifts",
+    "Type": "Income"  },
+ {
+    "ID": "065",
+    "Name": "Interests,dividends",
+    "Type": "Income"  },
+ {
+    "ID": "066",
+    "Name": "Lending, renting",
+    "Type": "Income"  },
+ {
+    "ID": "067",
+    "Name": "Lottery, gambling",
+    "Type": "Income"  },
+ {
+    "ID": "068",
+    "Name": "Refunds",
+    "Type": "Income"  },
+ {
+    "ID": "069",
+    "Name": "Rental income",
+    "Type": "Income"  },
+ {
+    "ID": "070",
+    "Name": "Sale",
+    "Type": "Income"  },
+ {
+    "ID": "071",
+    "Name": "Wage, invoices",
+    "Type": "Income"  },
+
+ {
+    "ID": "072",
+    "Name": " ",
+    "Type": "Others"  }
+]
