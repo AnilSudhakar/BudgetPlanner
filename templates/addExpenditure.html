@@ -1,8 +1,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Germany</title>
+    <title>Budget tracker 1.0</title>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="static/stylesheet/style.css">
     <!--<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheet/style.css') }}">-->
@@ -11,49 +12,24 @@
 
 <body>
 	<!-- As a heading -->
-	<h2>Budget Planner</h2>
+	<h2>What's your budget</h2>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="static/stylesheet/readCategory.js"> </script>
 
     <section>
-			 <form action="/addemp" autocomplete="on" method = "POST" enctype="multipart/form-data">
+			 <form action="/addexpenditure" autocomplete="on" method = "POST" enctype="multipart/form-data">
 				 <table>
 					 <tr>
 						 <td>
 							<h5 >Main Category</h5>
 								<select name="main_category" id= "main_category" data-target="secondList" class="firstList selectFilter" required="required">
-													<option value="-1">Select</option>
-													<option data-ref="Bayern">Bayern</option>
-													<option data-ref="Sachsen">Sachsen</option>
-													<option data-ref="Sachsen Anhalt">Sachsen Anhalt</option>
-													<option data-ref="Niedersachsen">Niedersachsen</option>
-													<option data-ref="Nordrhein Westfalen">Nordrhein Westfalen</option>
-													<option data-ref="Berlin">Berlin</option>
-													<option data-ref="Thüringen">Thüringen</option>
-													<option data-ref="Hessen">Hessen</option>
-													<option data-ref="Rheinland Pfalz">Rheinland Pfalz</option>
-													<option data-ref="Hamburg">Hamburg</option>
-													<option data-ref="Schleswig Holstein">Schleswig Holstein</option>
-													<option data-ref="Brandenburg">Brandenburg</option>
-													<option data-ref="Mecklenburg Vorpommern">Mecklenburg Vorpommern</option>
-													<option data-ref="Baden Württemberg">Baden Württemberg</option>
-													<option data-ref="Saarland">Saarland</option>
-													<option data-ref="Bremen">Bremen</option>
+													<option value="-1">Select Category</option>
 								</select>
 						 </td>
 						 <td>
 						<h5>Sub Category</h5>
 							<select name="sub_category" id="sub_category" class="secondList selectFilter" required="required">
-												<option value="-1">Select</option>
-												<option data-ref="Mannheim" data-belong="Baden Württemberg" >Mannheim</option>
-												<option data-ref="Lörrach Kreis" data-belong="Baden Württemberg" >Lörrach Kreis</option>
-												<option data-ref="Böblingen Kreis" data-belong="Baden Württemberg" >Böblingen Kreis</option>
-												<option data-ref="Stuttgart" data-belong="Baden Württemberg" >Stuttgart</option>
-												<option data-ref="Heilbronn" data-belong="Baden Württemberg" >Heilbronn</option>
-												<option data-ref="Rhein Neckar Kreis" data-belong="Baden Württemberg" >Rhein Neckar Kreis</option>
-												<option data-ref="Esslingen Kreis" data-belong="Baden Württemberg" >Esslingen Kreis</option>
-												<option data-ref="Ludwigsburg Kreis" data-belong="Baden Württemberg" >Ludwigsburg Kreis</option>
-												<option data-ref="Heidelberg" data-belong="Baden Württemberg" >Heidelberg</option>
-												<option data-ref="Karlsruhe Kreis" data-belong="Baden Württemberg" >Karlsruhe Kreis</option>
-												<option data-ref="Heilbronn Kreis" data-belong="Baden Württemberg" >Heilbronn Kreis</option>
+												<option value="-1">Select Category</option>
 							</select>
 							 </td>
 						 <td>
@@ -68,4 +44,5 @@
 			</form>
     </section>
 </body>
+
 </html>
