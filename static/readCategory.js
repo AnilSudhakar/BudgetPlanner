@@ -34,11 +34,11 @@
 
         $('#sub_category')
             .empty()
-            .append('<option value=""> -- Select -- </option>');
+            .append('<option value=""> Select Sub-category </option>');
 
         $.each(filterData, function (index, value) {
             // Now, fill the second dropdown list with category names.
-            $('#sub_category').append('<option value="' + value.ID + '">' + value.Name + '</option>');
+            $('#sub_category').append('<option value="' + value.Name + '">' + value.Name + '</option>');
         });
 
     });
