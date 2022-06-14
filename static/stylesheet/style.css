@@ -15,20 +15,6 @@ section
 	justify-content: center;
 	align-items: center;
 }
-.header
-{
-	background-color: #bba28c
-
-}
-.h2-font
-{
-	font-family: FreeMono, monospace;
-	padding-top:20px;
-	padding-bottom: 20px;
-	padding-left: 70px;
-	color: #0F19A0;
-}
-
 select
 {
 	background: rgba(255,255,255,.2);
@@ -37,15 +23,52 @@ option
 {
 	background: rgba(255,255,255,.2);
 }
-
-.button
-{
-    padding-left: 2px;
-    size: 5;
-    font:oblique;}
 h3
 {
 	backdrop-filter: blur(10px);
 
 }
+.header
+{
+	background-color: #bba28c
+
+}
+.h2-font
+{
+	font-family: "Roobert", sans-serif;
+	padding-top:20px;
+	padding-bottom: 20px;
+	padding-left: 50px;
+	color: #79B6C9;
+}
+.box
+{
+	background: rgba(255,255,255,.3);
+	box-shadow: 0 25px 15px rgba(0,0,0,.5);
+
+}
+.amount{
+    background: rgba(255,255,255,.2);
+}
+
+.button
+{
+    padding-left: 2px;
+    size: 5;
+    font:oblique;
+    color:#2C506E;
+}
+.btn-primary {
+    color: #212529;
+    background-color: #2C506E;
+}
+.container-fluid{
+    width:15px;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-right: 10px;
+    padding-right: 10px;
+    background-color: #2C506E;
+}
+
 
