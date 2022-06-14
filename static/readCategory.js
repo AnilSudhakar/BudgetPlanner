@@ -3,7 +3,7 @@
     let arrData = [];
 
   	// Fill the first dropdown with data.
-    $.getJSON('../../static/stylesheet/category.json', function (data) {
+    $.getJSON('../../static/category.json', function (data) {
 
 
         let arr_category = [];
