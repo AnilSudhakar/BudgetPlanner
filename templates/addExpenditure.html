@@ -43,23 +43,22 @@
 						 </td>
 						 <td>
 						<h5>Sub Category</h5>
-							<select name="sub_category" id="sub_category" class="secondList selectFilter" required="required">
+							<select name="sub_category" id="sub_category" class="secondList selectFilter" required="required" oninvalid="this.setCustomValidity('Please select a sub-category')" oninput="setCustomValidity('')">
 												<option value="-1">Select Sub-Category</option>
 							</select>
 							 </td>
 						 <td>
 						<h5>Amount</h5>
-						<input type="number" name="amount" id="amount" min= "0" max="10000" required="required">
+							<input class="amount" type="number" name="amount" id="amount" min= "0" max="10000" required="required" oninvalid="this.setCustomValidity('Please enter the amount')" oninput="setCustomValidity('')">
 						 </td>
 				 	</tr>
 				 </table>
 					<br>
             		<!-- Submit -->
 				 <div class="button">
-                    <button class="btn btn-outline-secondary", type="submit">Add Expenditure</button>
+                    <button class="btn-primary" type="submit">Add Expenditure</button>
 				 </div>
 			</form>
+		</div>
     </section>
 </body>
-
-</html>
