@@ -6,22 +6,37 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="static/stylesheet/style.css">
-    <!--<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheet/style.css') }}">-->
+
+	<!-- BootStrap -->
+ 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+
 
 </head>
 
 <body>
-	<!-- As a heading -->
-	<h2>What's your budget</h2>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="static/stylesheet/readCategory.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+	<!-- As a heading -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <h2 class="h2-font">What's your budget?</h2>
+            </div>
+        </div>
+    </nav>
+
+  </body>
+
+	<script src="static/readCategory.js"> </script>
 
     <section>
 			 <form action="/addexpenditure" autocomplete="on" method = "POST" enctype="multipart/form-data">
 				 <table>
 					 <tr>
 						 <td>
-							<h5 >Main Category</h5>
+							<h5>Main Category</h5>
 								<select name="main_category" id= "main_category" data-target="secondList" class="firstList selectFilter" required="required">
 													<option value="-1">Select Category</option>
 								</select>
@@ -29,7 +44,7 @@
 						 <td>
 						<h5>Sub Category</h5>
 							<select name="sub_category" id="sub_category" class="secondList selectFilter" required="required">
-												<option value="-1">Select Category</option>
+												<option value="-1">Select Sub-Category</option>
 							</select>
 							 </td>
 						 <td>
@@ -40,7 +55,9 @@
 				 </table>
 					<br>
             		<!-- Submit -->
-                    <button type="submit" style="background: grey; height: 35px; width: 150px; color: white; size: 5; font:oblique;">Add Expenditure</button>
+				 <div class="button">
+                    <button class="btn btn-outline-secondary", type="submit">Add Expenditure</button>
+				 </div>
 			</form>
     </section>
 </body>
