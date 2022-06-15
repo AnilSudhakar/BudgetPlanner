@@ -68,7 +68,7 @@ def addExpenditure():
     #
     # finally:
     #     cursor.close()
-    print("all modification done...")
+    print("Category: ", main_category, "Sub-category: ", sub_category, "Expenditure: ", amount, "euros")
     return render_template('addExpenditure.html')
 
 
