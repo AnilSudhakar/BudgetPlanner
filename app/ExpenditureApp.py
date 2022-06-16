@@ -70,7 +70,7 @@ def addExpenditure():
     # finally:
     #     cursor.close()
     print("date: ", date, "Category: ", main_category, "Sub-category: ", sub_category, "Expenditure: ", amount, "euros")
-    return render_template('addExpenditure.html')
+    return render_template('getAddedExpenditure.html')
 
 
 if __name__ == '__main__':
