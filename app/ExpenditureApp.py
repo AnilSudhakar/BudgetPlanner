@@ -28,6 +28,7 @@ def home():
 
 @app.route("/addexpenditure", methods=['POST'])
 def addExpenditure():
+    date = request.form['date']
     main_category = request.form['main_category']
     sub_category = request.form['sub_category']
     amount = request.form['amount']
@@ -68,7 +69,7 @@ def addExpenditure():
     #
     # finally:
     #     cursor.close()
-    print("Category: ", main_category, "Sub-category: ", sub_category, "Expenditure: ", amount, "euros")
+    print("date: ", date, "Category: ", main_category, "Sub-category: ", sub_category, "Expenditure: ", amount, "euros")
     return render_template('addExpenditure.html')
 
 

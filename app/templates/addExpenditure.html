@@ -31,21 +31,33 @@
 			 <form action="/addexpenditure" autocomplete="on" method = "POST" enctype="multipart/form-data">
 				 <table>
 					 <tr>
-						 <td>
-							<h5>Main Category</h5>
-								<select name="main_category" id= "main_category" data-target="secondList" class="firstList selectFilter" required="required">
-													<option value="-1">Select Category</option>
-								</select>
+					 	<td>
+							<div class="data">
+								<h5>Enter the date</h5>
+								<input class="date" type="date"  id="date" name="date" required="required" oninvalid="this.setCustomValidity('Please enter the date')" oninput="setCustomValidity('')">
+							</div>
 						 </td>
 						 <td>
-						<h5>Sub Category</h5>
-							<select name="sub_category" id="sub_category" class="secondList selectFilter" required="required" oninvalid="this.setCustomValidity('Please select a sub-category')" oninput="setCustomValidity('')">
-												<option value="-1">Select Sub-Category</option>
-							</select>
+							 <div class="data">
+								<h5>Main Category</h5>
+									<select name="main_category" id= "main_category" data-target="secondList" class="firstList selectFilter" required="required" oninvalid="this.setCustomValidity('Please select a Category')" oninput="setCustomValidity('')">
+														<option value="-1">Select Category</option>
+									</select>
+							 </div>
+						 </td>
+						 <td>
+							 <div class="data">
+								<h5>Sub Category</h5>
+								<select name="sub_category" id="sub_category" class="secondList selectFilter" required="required" oninvalid="this.setCustomValidity('Please select a sub-category')" oninput="setCustomValidity('')">
+													<option value="-1">Select Sub-Category</option>
+								</select>
+							 </div>
 							 </td>
 						 <td>
-						<h5>Amount</h5>
-							<input class="amount" type="number" name="amount" id="amount" min= "0" max="10000" required="required" oninvalid="this.setCustomValidity('Please enter the amount')" oninput="setCustomValidity('')">
+							 <div class="data">
+								<h5>Amount</h5>
+								<input class="amount" type="number" name="amount" id="amount" min= "0" max="10000" required="required" oninvalid="this.setCustomValidity('Please enter the amount')" oninput="setCustomValidity('')">
+						 	</div>
 						 </td>
 				 	</tr>
 				 </table>
