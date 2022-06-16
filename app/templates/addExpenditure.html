@@ -31,7 +31,12 @@
 			 <form action="/addexpenditure" autocomplete="on" method = "POST" enctype="multipart/form-data">
 				 <table>
 					 <tr>
-						 <td>
+					 	<td>
+							<div class="data">
+								<h5>Enter the date</h5>
+								<input class="date" type="date"  id="date" name="date" required="required" oninvalid="this.setCustomValidity('Please enter the date')" oninput="setCustomValidity('')">
+							</div>
+						 </td>
 							<h5>Main Category</h5>
 								<select name="main_category" id= "main_category" data-target="secondList" class="firstList selectFilter" required="required">
 													<option value="-1">Select Category</option>

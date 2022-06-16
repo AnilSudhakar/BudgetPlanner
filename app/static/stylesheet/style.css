@@ -46,6 +46,9 @@ h3
 	background: rgba(255,255,255,.3);
 	box-shadow: 0 25px 15px rgba(0,0,0,.5);
 
+.date
+{
+    background: rgba(255,255,255,.2);
 }
 .amount{
     background: rgba(255,255,255,.2);
