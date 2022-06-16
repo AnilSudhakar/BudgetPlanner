@@ -43,29 +43,40 @@ h3
 }
 .box
 {
+    margin-top: -50px;
+    margin-left: -120px;
 	background: rgba(255,255,255,.3);
 	box-shadow: 0 25px 15px rgba(0,0,0,.5);
 
+}
+.data
+{
+    margin-left: 10px;
+}
 .date
 {
     background: rgba(255,255,255,.2);
 }
 .amount{
+    width: 150px;
+    margin-right: 10px;
     background: rgba(255,255,255,.2);
 }
 
 .button
 {
-    padding-left: 2px;
+    padding-left: 10px;
     size: 5;
     font:oblique;
     color:#2C506E;
 }
-.btn-primary {
+.btn-primary
+{
     color: #212529;
     background-color: #2C506E;
 }
-.container-fluid{
+.container-fluid
+{
     width: 1600px;
     height: 140px;
     margin-left: 0px;
