@@ -1,3 +1,6 @@
+/*
+ addExpenditure
+*/
 body
 {
 	margin: 0;
@@ -90,5 +93,41 @@ h3
     margin-left: 0px;
     background-color: #2C506E;
 }
+/*
+ getAddedExpenditure
+*/
+.background
+{
+    width: 1600px;
+    height: 500px;
+    background-color: #79B6C9;
+}
 
-
+.headline
+{
+    margin-top: 0px;
+    padding-top: 50px;
+    padding-left: 55px;
+}
+.summary-box
+{
+    width: 1000px;
+    margin-left: 55px;
+    margin-right: 50px;
+    font-size: 20px;
+	background: rgba(255,255,255,.3);
+	box-shadow: 0 5px 5px rgba(0,0,0,.5);
+}
+.btn btn-primary
+{
+    color: #212529;
+    background-color: #2C506E;
+}
+.show-button
+{
+    margin-right:0px;
+    padding-right:0px;
+    size: 5;
+    font:oblique;
+    color:#2C506E;
+}
