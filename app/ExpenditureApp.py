@@ -1,10 +1,16 @@
+import os
 import boto3
 from flask import Flask, render_template, request
+from werkzeug.utils import secure_filename
 from pymysql import connections
 
 from config import *
 
+UPLOAD_FOLDER = '/home/anilkaiyambally/Uploads/'
+ALLOWED_EXTENSIONS = {'pdf', 'png', 'jpg', 'jpeg'}
+
 app = Flask(__name__)
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 bucket = custombucket
 region = customregion
@@ -82,7 +88,8 @@ def addExpenditure():
     # finally:
     #     cursor.close()
     print("date: ", date, "Category: ", main_category, "Sub-category: ", sub_category, "Expenditure: ", amount, "euros")
-    return render_template('getAddedExpenditure.html')
+    return render_template('getAddedExpenditure.html', date=date, category=main_category, sub_category=sub_category,
+                           amount=amount, filename=receipt_path)
 
 
 if __name__ == '__main__':
