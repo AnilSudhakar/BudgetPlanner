@@ -32,6 +32,13 @@ def addExpenditure():
     main_category = request.form['main_category']
     sub_category = request.form['sub_category']
     amount = request.form['amount']
+    receipt_path = None
+    if request.method == 'POST':
+        receipt = request.files['formFile']
+        if receipt and allowed_file(receipt.filename):
+            filename = secure_filename(receipt.filename)
+            #receipt.save(UPLOAD_FOLDER + filename)
+            receipt_path = UPLOAD_FOLDER + filename
 
     # insert_sql = "INSERT INTO expenditure VALUES (%s, %s, %s, %s, %s)"
     # cursor = db_conn.cursor()
