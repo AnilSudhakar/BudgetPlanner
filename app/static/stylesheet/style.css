@@ -118,15 +118,13 @@ h3
 	background: rgba(255,255,255,.3);
 	box-shadow: 0 5px 5px rgba(0,0,0,.5);
 }
-.btn btn-primary
+.entered-data
 {
-    color: #212529;
-    background-color: #2C506E;
+    margin-left: 25px;
 }
 .show-button
 {
-    margin-right:0px;
-    padding-right:0px;
+    margin-right:10px;
     size: 5;
     font:oblique;
     color:#2C506E;
