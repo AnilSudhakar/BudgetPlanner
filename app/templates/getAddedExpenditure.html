@@ -1,0 +1,87 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget tracker 1.0</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="static/stylesheet/style.css">
+
+	<!-- BootStrap -->
+ 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  </head>
+
+<body>
+    <!-- Adding scripts to use bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+	<!-- As a heading -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <h2 class="h2-font">What's your budget?</h2>
+            </div>
+        </div>
+    </nav>
+
+    <div class="background">
+        <h4 class="headline">A new budget entry has been added </h4>
+            <table class="summary-box">
+                <tr>
+                    <td>
+                        <div class="entered-data">
+                            <h5>{{date}}</h5>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="entered-data">
+                            <h5>{{category}}</h5>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="entered-data">
+                            <h5> {{sub_category}}</h5>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="entered-data">
+                            <h5>{{amount}} Euros</h5>
+                        </div>
+                    </td>
+
+                    <td>
+                        {% if filename %}
+                             <!-- Button to launch a modal -->
+                            <div class="entered-data show-button">
+                                <button type="button" class="btn-primary" data-toggle="modal" data-target="#exampleModal"> Show Uploaded receipt </button>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <!-- Add image inside the body of modal -->
+                                        <div class="modal-body">
+                                            <img id="image" src="static/stylesheet/budget.png" alt="Click on button" width="200" height="200"/>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal"> Close </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% else %}
+                          no receipt uploaded
+                        {% endif %}
+                    </td>
+                </tr>
+            </table>
+    </div>
+</body>
