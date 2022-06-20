@@ -21,10 +21,9 @@ db_conn = connections.Connection(
     user=customuser,
     password=custompass,
     db=customdb
-
 )
 output = {}
-table = 'expenditure'
+table = 'budget'
 
 
 def allowed_file(filename):
@@ -61,7 +60,7 @@ def addExpenditure():
         db_conn.commit()
 
         # Upload image file in S3 #
-        exp_image_file_name_in_s3 = receipt_path.filename + "_image_file"
+        exp_image_file_name_in_s3 = receipt_path.filename
         s3 = boto3.resource('s3')
 
         try:
@@ -69,15 +68,16 @@ def addExpenditure():
             s3.Bucket(custombucket).put_object(Key=exp_image_file_name_in_s3, Body=receipt_path)
             bucket_location = boto3.client('s3').get_bucket_location(Bucket=custombucket)
             s3_location = (bucket_location['LocationConstraint'])
+            print(s3_location)
 
             if s3_location is None:
                 s3_location = ''
             else:
                 s3_location = '-' + s3_location
 
-            object_url = "https://s3{0}.amazonaws.com/{1}/{2}".format(
-                s3_location,
+            object_url = "https://{0}.s3.{1}.amazonaws.com/{2}".format(
                 custombucket,
+                customregion,
                 exp_image_file_name_in_s3)
 
         except Exception as e:
