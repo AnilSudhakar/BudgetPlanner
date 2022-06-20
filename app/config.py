@@ -1,4 +1,4 @@
-customhost = "budgetplanner.cxftipl0tzof.eu-central-1.rds.amazonaws.com"
+customhost = "budget-1.cxftipl0tzof.eu-central-1.rds.amazonaws.com"
 customuser = "admin"
 custompass = "Suryaputra"
 customdb = "budget"
