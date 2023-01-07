@@ -1,6 +1,6 @@
-customhost = "budgettracker.cxftipl0tzof.eu-central-1.rds.amazonaws.com"
+customhost = "budgettracker.xxxxxx.eu-central-1.rds.amazonaws.com"
 customuser = "admin"
-custompass = "Suryaputra"
+custompass = "xxxxxx"
 customdb = "employee"
 custombucket = "add-bill-image"
 customregion = "eu-central-1"
